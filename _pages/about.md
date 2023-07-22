@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Senior Expert at <a href='https://www.bosch-ai.com/'>Bosch Center for Artificial Intelligence</a>.
+subtitle: Senior Expert for "Robust Scalable Perception" at <a href='https://www.bosch-ai.com/'>Bosch Center for Artificial Intelligence</a>.
 
 profile:
   align: right
