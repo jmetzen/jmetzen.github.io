@@ -62,6 +62,24 @@
       ]
     },
     {
+      "name": "Robotics Research Group, University of Bremen",
+      "position": "Project Leader 'CASCADE'",
+      "url": "https://robotik.dfki-bremen.de/de/forschung/projekte/cascade",
+      "startDate": "2014-08-01",
+      "endDate": "2016-01-31",
+      "summary": "Leading the subteam in Bremen of the EU project CASCADE",
+      "highlights": ""
+    },
+    {
+      "name": "Robotics Innovation Center, German Research Center for Artificial Intelligence (DFKI RIC, Bremen)",
+      "position": "Team leader 'Sustained Learning'",
+      "url": "https://robotik.dfki-bremen.de/",
+      "startDate": "2013-01-01",
+      "endDate": "2015-12-31",
+      "summary": "Leading a team of approximately 10 researchers focusing on robotic learning.",
+      "highlights": ""
+    },    
+    {
       "name": "Robotics Innovation Center, German Research Center for Artificial Intelligence (DFKI RIC, Bremen)",
       "position": "Researcher",
       "url": "https://robotik.dfki-bremen.de/",
@@ -81,9 +99,9 @@
       "endDate": "2007-06-30",
       "summary": "",
       "highlights": [
-        "Reinforcement Learning",
+        "Reinforcement Learning"
       ]
-    },
+    }
   ],
   "volunteer": [],
   "education": [
