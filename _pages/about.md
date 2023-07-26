@@ -17,4 +17,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Under construction...
+My primary research focuses on making AI (specifically computer-vision based perception) robust, reliable, and safe. This includes [identifying vulnerabilities of Transformer-based neural network against adversarial patch/token attacks](https://openaccess.thecvf.com/content/CVPR2022/papers/Lovisotto_Give_Me_Your_Attention_Dot-Product_Attention_Considered_Harmful_for_Adversarial_CVPR_2022_paper.pdf) as well as [finding systematic errors of image classifiers on rare subgroups](https://arxiv.org/abs/2303.05072). We also developed  architectures that are certifiably robust against patch attacks for [image classifiers](https://openreview.net/forum?id=hr-3PMvDpil) as well as for [semantic segmentation](https://openreview.net/forum?id=b0JxQC7JLWh).
+
+A different strand of my research is automating machine learning (AutoML), specifically Neural Architecture Search. The latter research field is motivated by the vast design space of neural networks and the diversity of inference hardware. Manually tailoring a neural architecture for every type of hardware is cumbersome and not scalable - hardware-aware neural architecture search can vastly improve design efficiency and thus reduce cost of AI development. See our survey on [neural architecture search](https://jmlr.org/papers/v20/18-598.html) and a more recent survey on [Neural Architecture Search for Dense Prediction Tasks in Computer Vision](https://arxiv.org/abs/2202.07242). I was senior area chair of the [AutoML 2022 conference](https://2022.automl.cc/) and co-organizer of the workshops [NAS@ICLR 2020](https://sites.google.com/view/nas2020) and [NAS@ICLR 2021](https://sites.google.com/view/nas2021).
+
+Note: this site is still under construction...
