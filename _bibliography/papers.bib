@@ -116,14 +116,18 @@
   year={2022},
   selected={true},
   arxiv={2203.13639},
-  pdf={https://arxiv.org/pdf/2203.13639.pdf}
+  pdf={https://arxiv.org/pdf/2203.13639.pdf},
+  abstract={Neural architectures based on attention such as vision transformers are revolutionizing image recognition. Their main benefit is that attention allows reasoning about all parts of a scene jointly. In this paper, we show how the global reasoning of (scaled) dot-product attention can be the source of a major vulnerability when confronted with adversarial patch attacks. We provide a theoretical understanding of this vulnerability and relate it to an adversary's ability to misdirect the attention of all queries to a single key token under the control of the adversarial patch. We propose novel adversarial objectives for crafting adversarial patches which target this vulnerability explicitly. We show the effectiveness of the proposed patch attacks on popular image classification (ViTs and DeiTs) and object detection models (DETR). We find that adversarial patches occupying 0.5{%} of the input can lead to robust accuracies as low as 0{%} for ViT on ImageNet, and reduce the mAP of DETR on MS COCO to less than 3{%}.},
 }
 
 @article{yatsura2022certified,
   title={Certified Defences Against Adversarial Patch Attacks on Semantic Segmentation},
   author={Yatsura, Maksym and Sakmann, Kaspar and Hua, N Grace and Hein, Matthias and Metzen, Jan Hendrik},
   journal={arXiv preprint arXiv:2209.05980},
-  year={2022}
+  year={2022},
+  arxiv={2209.05980},
+  pdf={https://arxiv.org/pdf/2209.05980.pdf},
+  abstract={Adversarial patch attacks are an emerging security threat for real world deep learning applications. We present Demasked Smoothing, the first approach (up to our knowledge) to certify the robustness of semantic segmentation models against this threat model. Previous work on certifiably defending against patch attacks has mostly focused on image classification task and often required changes in the model architecture and additional training which is undesirable and computationally expensive. In Demasked Smoothing, any segmentation model can be applied without particular training, fine-tuning, or restriction of the architecture. Using different masking strategies, Demasked Smoothing can be applied both for certified detection and certified recovery. In extensive experiments we show that Demasked Smoothing can on average certify 64{%} of the pixel predictions for a 1{%} patch in the detection task and 48{%} against a 0.5{%} patch for the recovery task on the ADE20K dataset.},
 }
 
 @inproceedings{sheikholeslami2022denoised,
@@ -142,7 +146,7 @@
   arxiv={2303.05072},
   pdf={https://arxiv.org/pdf/2303.05072.pdf},
   abstract={Despite excellent average-case performance of many image classifiers, their performance can substantially deteriorate on semantically coherent subgroups of the data that were under-represented in the training data. These systematic errors can impact both fairness for demographic minority groups as well as robustness and safety under domain shift. A major challenge is to identify such subgroups with subpar performance when the subgroups are not annotated and their occurrence is very rare. We leverage recent advances in text-to-image models and search in the space of textual descriptions of subgroups ("prompts") for subgroups where the target model has low performance on the prompt-conditioned synthesized data. To tackle the exponentially growing number of subgroups, we employ combinatorial testing. We denote this procedure as PromptAttack as it can be interpreted as an adversarial attack in a prompt space. We study subgroup coverage and identifiability with PromptAttack in a controlled setting and find that it identifies systematic errors with high accuracy. Thereupon, we apply PromptAttack to ImageNet classifiers and identify novel systematic errors on rare subgroups. },
-  abbrv={ICCV},
+  abbrv={ICCV}
 }
 
 @article{mohan2023neural,
@@ -151,7 +155,9 @@
   journal={International Journal of Computer Vision},
   pages={1--24},
   year={2023},
-  publisher={Springer}
+  publisher={Springer},
+  arxiv={2202.07242},
+  abstract={The success of deep learning in recent years has lead to a rising demand for neural network architecture engineering. As a consequence, neural architecture search (NAS), which aims at automatically designing neural network architectures in a data-driven manner rather than manually, has evolved as a popular field of research. With the advent of weight sharing strategies across architectures, NAS has become applicable to a much wider range of problems. In particular, there are now many publications for dense prediction tasks in computer vision that require pixel-level predictions, such as semantic segmentation or object detection. These tasks come with novel challenges, such as higher memory footprints due to high-resolution data, learning multi-scale representations, longer training times, and more complex and larger neural architectures. In this manuscript, we provide an overview of NAS for dense prediction tasks by elaborating on these novel challenges and surveying ways to address them to ease future research and application of existing methods to novel problems. }
 }
 
 
