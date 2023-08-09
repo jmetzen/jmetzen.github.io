@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Jan Metzen's website # the website title (if blank, full name will be used instead)
+title: Jan Hendrik Metzen's website # the website title (if blank, full name will be used instead)
 first_name: Jan
 middle_name: Hendrik
 last_name: Metzen
@@ -16,7 +16,7 @@ footer_text: >
 keywords:  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🪪  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://jmetzen.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -71,7 +71,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: jmetzen # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: jan_metzen # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
