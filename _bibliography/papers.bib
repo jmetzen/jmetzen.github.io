@@ -201,6 +201,19 @@
   abstract={The success of deep learning in recent years has lead to a rising demand for neural network architecture engineering. As a consequence, neural architecture search (NAS), which aims at automatically designing neural network architectures in a data-driven manner rather than manually, has evolved as a popular field of research. With the advent of weight sharing strategies across architectures, NAS has become applicable to a much wider range of problems. In particular, there are now many publications for dense prediction tasks in computer vision that require pixel-level predictions, such as semantic segmentation or object detection. These tasks come with novel challenges, such as higher memory footprints due to high-resolution data, learning multi-scale representations, longer training times, and more complex and larger neural architectures. In this manuscript, we provide an overview of NAS for dense prediction tasks by elaborating on these novel challenges and surveying ways to address them to ease future research and application of existing methods to novel problems. }
 }
 
+@inproceedings{boreiko2023identifying,
+  author = {{Boreiko}, Valentyn and {Hein}, Matthias and {Hendrik Metzen}, Jan},
+  title = "{Identifying Systematic Errors in Object Detectors with the SCROD Pipeline}",
+  booktitle={BRAVO Workshop, ICCV},
+  year={2023},
+  selected={true},
+  arxiv={2309.13489},
+  pdf={https://arxiv.org/pdf/2309.13489.pdf},
+  abstract={The identification and removal of systematic errors in object detectors can be a prerequisite for their deployment in safety-critical applications like automated driving and robotics. Such systematic errors can for instance occur under very specific object poses (location, scale, orientation), object colors/textures, and backgrounds. Real images alone are unlikely to cover all relevant combinations. We overcome this limitation by generating synthetic images with fine-granular control. While generating synthetic images with physical simulators and hand-designed 3D assets allows fine-grained control over generated images, this approach is resource-intensive and has limited scalability. In contrast, using generative models is more scalable but less reliable in terms of fine-grained control. In this paper, we propose a novel framework that combines the strengths of both approaches. Our meticulously designed pipeline along with custom models enables us to generate street scenes with fine-grained control in a fully automated and scalable manner. Moreover, our framework introduces an evaluation setting that can serve as a benchmark for similar pipelines. This evaluation setting will contribute to advancing the field and promoting standardized testing procedures.},
+  abbrv={BRAVO, ICCV 2023}
+}
+
+
 
 
 
