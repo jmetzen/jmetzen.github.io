@@ -213,7 +213,15 @@
   abbrv={BRAVO, ICCV 2023}
 }
 
-
+@inproceedings{metzen2023autoclip,
+      title={AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models}, 
+      author={Jan Hendrik Metzen and Piyapat Saranrittichai and Chaithanya Kumar Mummadi},
+      year={2023},
+      arxiv={2309.16414},
+      pdf={https://arxiv.org/pdf/2309.16414.pdf},
+      abstract={Classifiers built upon vision-language models such as CLIP have shown remarkable zero-shot performance across a broad range of image classification tasks. Prior work has studied different ways of automatically creating descriptor sets for every class based on prompt templates, ranging from manually engineered templates over templates obtained from a large language model to templates built from random words and characters. Up until now, deriving zero-shot classifiers from the respective encoded class descriptors has remained nearly unchanged, i.e., classify to the class that maximizes cosine similarity between its averaged encoded class descriptors and the image encoding. However, weighing all class descriptors equally can be suboptimal when certain descriptors match visual clues on a given image better than others. In this work, we propose AutoCLIP, a method for auto-tuning zero-shot classifiers. AutoCLIP tunes per-image weights to each prompt template at inference time, based on statistics of class descriptor-image similarities. AutoCLIP is fully unsupervised, has very low computational overhead, and can be easily implemented in few lines of code. We show that AutoCLIP outperforms baselines across a broad range of vision-language models, datasets, and prompt templates consistently and by up to 3 percent point accuracy.},
+	  selected={true},
+}
 
 
 
