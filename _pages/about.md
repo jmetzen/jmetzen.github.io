@@ -28,3 +28,5 @@ I also love contributing to machine learning libraries, both open source and pro
 I am a member of [ELLIS](https://ellis.eu/members) and regularly review for scientific conferences and journals such as ICLR, ICML, NeurIPS, and TMLR. I was senior area chair of the [AutoML 2022 conference](https://2022.automl.cc/) and co-organizer of the workshops [NAS@ICLR 2020](https://sites.google.com/view/nas2020) and [NAS@ICLR 2021](https://sites.google.com/view/nas2021). I have been recognized by ICLR as [Highlighted Reviewer in 2022](https://iclr.cc/Conferences/2022/Reviewers) and [Outstanding Reviewer in 2021](https://iclr.cc/Conferences/2021/Reviewers).
 
 See also my [curriculum vitae](https://registry.jsonresume.org/jmetzen) for more information. Feel free to contact me via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#97;&#110;&#109;&#101;&#116;&#122;&#101;&#110;&#64;&#109;&#97;&#105;&#108;&#98;&#111;&#120;&#46;&#111;&#114;&#103;">&#106;&#97;&#110;&#109;&#101;&#116;&#122;&#101;&#110;&#64;&#109;&#97;&#105;&#108;&#98;&#111;&#120;&#46;&#111;&#114;&#103;</a>.
+
+Creating [SVGStud.io](http://svgstud.io/), an app for AI-based SVG generation.
