@@ -29,4 +29,3 @@ I am a member of [ELLIS](https://ellis.eu/members) and regularly review for scie
 
 See also my [curriculum vitae](https://registry.jsonresume.org/jmetzen) for more information. Feel free to contact me via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#97;&#110;&#109;&#101;&#116;&#122;&#101;&#110;&#64;&#109;&#97;&#105;&#108;&#98;&#111;&#120;&#46;&#111;&#114;&#103;">&#106;&#97;&#110;&#109;&#101;&#116;&#122;&#101;&#110;&#64;&#109;&#97;&#105;&#108;&#98;&#111;&#120;&#46;&#111;&#114;&#103;</a>.
 
-Building [SVGStud.io](https://svgstud.io/), an app for AI-based SVG generation.
