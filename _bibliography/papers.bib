@@ -220,7 +220,7 @@
       arxiv={2309.16414},
       pdf={https://arxiv.org/pdf/2309.16414.pdf},
       abstract={Classifiers built upon vision-language models such as CLIP have shown remarkable zero-shot performance across a broad range of image classification tasks. Prior work has studied different ways of automatically creating descriptor sets for every class based on prompt templates, ranging from manually engineered templates over templates obtained from a large language model to templates built from random words and characters. Up until now, deriving zero-shot classifiers from the respective encoded class descriptors has remained nearly unchanged, i.e., classify to the class that maximizes cosine similarity between its averaged encoded class descriptors and the image encoding. However, weighing all class descriptors equally can be suboptimal when certain descriptors match visual clues on a given image better than others. In this work, we propose AutoCLIP, a method for auto-tuning zero-shot classifiers. AutoCLIP tunes per-image weights to each prompt template at inference time, based on statistics of class descriptor-image similarities. AutoCLIP is fully unsupervised, has very low computational overhead, and can be easily implemented in few lines of code. We show that AutoCLIP outperforms baselines across a broad range of vision-language models, datasets, and prompt templates consistently and by up to 3 percent point accuracy.},
-	  selected={true},
+      selected={true},
 }
 
 @InProceedings{Tarsi_2024_WACV,
@@ -229,17 +229,47 @@
     booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
     year      = {2024},
     pages     = {4560-4571},
+    abstract  = {In scientific publications, a substantial part of the information is expressed via figures containing images and diagrams. Hence, the retrieval of relevant figures given a natural language query is an important real-world task. However, due to the lack of training and evaluation data, most existing approaches are either limited to one modality or focus on non-scientific domains, making their application to scientific publications challenging. In this paper, we address this gap by introducing two novel datasets: (1) SciOL, the largest openly-licensed pre-training corpus for multimodal models in the scientific domain, covering multiple sciences including materials science, physics, and computer science, and (2) MuLMS-Img, a high-quality dataset in the materials science domain, manually annotated for various image-text tasks. Our experiments show that pre-training large-scale vision-language models on SciOL increases performance considerably across a broad variety of image-text tasks including figure type classification, optical character recognition, captioning, and figure retrieval. Using MuLMS-Img, we show that integrating text-based features extracted via a fine-tuned model for a specific domain can boost cross-modal scientific figure retrieval performance by up to 50%.}
     pdf       = {https://openaccess.thecvf.com/content/WACV2024/papers/Tarsi_SciOL_and_MuLMS-Img_Introducing_a_Large-Scale_Multimodal_Scientific_Dataset_and_WACV_2024_paper.pdf},
 }
 
-@article{boreiko2024identification,
+@InProceedings{boreiko2024identification,
   title={Identification of Fine-grained Systematic Errors via Controlled Scene Generation},
   author={Boreiko, Valentyn and Hein, Matthias and Metzen, Jan Hendrik},
   year={2024},
   arxiv={2404.07045},
-  pdf={https://arxiv.org/pdf/2404.07045.pdf},
+  pdf={https://arxiv.org/pdf/2404.07045},
   abstract={Many safety-critical applications, especially in autonomous driving, require reliable object detectors. They can be very effectively assisted by a method to search for and identify potential failures and systematic errors before these detectors are deployed. Systematic errors are characterized by combinations of attributes such as object location, scale, orientation, and color, as well as the composition of their respective backgrounds. To identify them, one must rely on something other than real images from a test set because they do not account for very rare but possible combinations of attributes. To overcome this limitation, we propose a pipeline for generating realistic synthetic scenes with fine-grained control, allowing the creation of complex scenes with multiple objects. Our approach, BEV2EGO, allows for a realistic generation of the complete scene with road-contingent control that maps 2D bird's-eye view (BEV) scene configurations to a first-person view (EGO). In addition, we propose a benchmark for controlled scene generation to select the most appropriate generative outpainting model for BEV2EGO. We further use it to perform a systematic analysis of multiple state-of-the-art object detection models and discover differences between them.},
 }
+
+@InProceedings{popp2024zero,
+  title={Zero-Shot Distillation for Image Encoders: How to Make Effective Use of Synthetic Data},
+  author={Popp, Niclas and Metzen, Jan Hendrik and Hein, Matthias},
+  arxiv={2404.16637},
+  year={2024},
+  pdf={https://arxiv.org/abs/2404.16637},
+}
+
+@InProceedings{xing2024retinex,
+  title={Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory},
+  author={Xing, Xiaoyan and Hu, Vincent Tao and Metzen, Jan Hendrik and Groh, Konrad and Karaoglu, Sezer and Gevers, Theo},
+  arxiv={2407.20785},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2407.20785},
+}
+
+@inproceedings{wang2024label,
+  title={Label-free Neural Semantic Image Synthesis},
+  author={Wang, Jiayi and Laube, Kevin Alexander and Li, Yumeng and Metzen, Jan Hendrik and Cheng, Shin-I and Borges, Julio and Khoreva, Anna},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  arxiv={2407.01790},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2407.01790},
+  abstract={Recent work has shown great progress in integrating spatial conditioning to control large, pre-trained text-to-image diffusion models. Despite these advances, existing methods describe the spatial image content using hand-crafted conditioning inputs, which are either semantically ambiguous (e.g., edges) or require expensive manual annotations (e.g., semantic segmentation). To address these limitations, we propose a new label-free way of conditioning diffusion models to enable fine-grained spatial control. We introduce the concept of \emph{neural semantic image synthesis}, which uses neural layouts extracted from pre-trained foundation models as conditioning. Neural layouts are advantageous as they provide rich descriptions of the desired image, containing both semantics and detailed geometry of the scene. We experimentally show that images synthesized via neural semantic image synthesis achieve similar or superior pixel-level alignment of semantic classes compared to those created using expensive semantic label maps. At the same time, they capture better semantics, instance separation, and object orientation than other label-free conditioning options, such as edges or depth. Moreover, we show that images generated by neural layout conditioning can effectively augment real data for training various perception tasks.},
+  selected={true},
+}
+
+
 
 
 
