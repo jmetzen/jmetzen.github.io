@@ -1,1 +1,161 @@
-{"basics":{"name":"Jan Hendrik Metzen","label":"Senior Expert","image":"","email":"janmetzen@mailbox.org","phone":"","url":"https://jmetzen.github.io/","summary":"Senior Expert 'Robust Scalable Perception'","location":{"address":"","postalCode":"71034","city":"Böblingen","countryCode":"DE","region":""},"profiles":[{"network":"Twitter","username":"jan_metzen","url":"https://twitter.com/jan_metzen"}]},"work":[{"name":"Bosch Center for Artificial Intelligence (BCAI), Robert Bosch GmbH","position":"Senior Expert 'Robust Scalable Perception'","url":"https://www.bosch-ai.com/","startDate":"2020-01-01","endDate":"current","summary":"Making Deep Learning Perception Safe by Model Auditing and Robust Training and Architectures.","highlights":["Robustness of Deep Learning (Systematic Errors, Domain Shift, Adversarial Examples)","Neural Architecture Search","Synthetic Data"]},{"name":"Bosch Center for Artificial Intelligence (BCAI), Robert Bosch GmbH","position":"Research Scientist","url":"https://www.bosch-ai.com/","startDate":"2016-03-01","endDate":"2019-12-31","summary":"","highlights":["Adversarial Examples","Neural Architecture Search"]},{"name":"Robotics Research Group, University of Bremen","position":"Research Assistant","url":"https://www.uni-bremen.de/robotik","startDate":"2009-11-01","endDate":"2016-02-29","summary":"","highlights":["Reinforcement Learning","Robot Learning","Bayesian Optimization"]},{"name":"Robotics Research Group, University of Bremen","position":"Project Leader 'CASCADE'","url":"https://robotik.dfki-bremen.de/de/forschung/projekte/cascade","startDate":"2014-08-01","endDate":"2016-01-31","summary":"Leading the subteam in Bremen of the EU project CASCADE","highlights":""},{"name":"Robotics Innovation Center, German Research Center for Artificial Intelligence (DFKI RIC, Bremen)","position":"Team leader 'Sustained Learning'","url":"https://robotik.dfki-bremen.de/","startDate":"2013-01-01","endDate":"2015-12-31","summary":"Leading a team of approximately 10 researchers focusing on robotic learning.","highlights":""},{"name":"Robotics Innovation Center, German Research Center for Artificial Intelligence (DFKI RIC, Bremen)","position":"Researcher","url":"https://robotik.dfki-bremen.de/","startDate":"2007-07-01","endDate":"2009-10-31","summary":"","highlights":["Brain-Computer Interfaces","Robot Learning"]},{"name":"Robotics Research Group, University of Bremen","position":"Research Assistant","url":"https://www.uni-bremen.de/robotik","startDate":"2006-09-01","endDate":"2007-06-30","summary":"","highlights":["Reinforcement Learning"]}],"volunteer":[],"education":[{"institution":"University Bremen, Bremen, Germany","url":"https://media.suub.uni-bremen.de/handle/elib/625","area":"Hierachical Reinforcement Learning","studyType":"Dr.rer.nat. (PhD)","startDate":"2009","endDate":"2014","score":"","courses":["Learning the Structure of Continuous Markov Decision Processes"]},{"institution":"University Münster, Münster, Germany","url":"","area":"Medical Image Registration","studyType":"Diploma in Computer Science","startDate":"2001","endDate":"2006","score":"","courses":["Matching von Baumstrukturen in der medizinischen Bildverarbeitung"]}],"awards":[{"title":"Scholarship","date":"2004 - 2006","awarder":"Studienstiftung des Deutschen Volkes (German National Academic Foundation)","summary":""}],"certificates":[],"publications":[],"skills":[],"languages":[{"language":"German","fluency":"Native speaker"},{"language":"English","fluency":"Fluent"},{"language":"Spanish","fluency":"Basic"}],"interests":[],"references":[],"projects":[]}
+{
+  "basics": {
+    "name": "Jan Hendrik Metzen",
+    "label": "Senior Expert",
+    "image": "",
+    "email": "janmetzen@mailbox.org",
+    "phone": "",
+    "url": "https://jmetzen.github.io/",
+    "summary": "Senior Expert 'Robust Scalable Perception'",
+    "location": {
+      "address": "",
+      "postalCode": "71034",
+      "city": "Böblingen",
+      "countryCode": "DE",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "jan_metzen",
+        "url": "https://twitter.com/jan_metzen"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Bosch Center for Artificial Intelligence (BCAI), Robert Bosch GmbH",
+      "position": "Senior Expert 'Robust Scalable Perception'",
+      "url": "https://www.bosch-ai.com/",
+      "startDate": "2020-01-01",
+      "endDate": "current",
+      "summary": "Making Deep Learning Perception Safe by Model Auditing and Robust Training and Architectures.",
+      "highlights": [
+        "Robustness of Deep Learning (Systematic Errors, Domain Shift, Adversarial Examples)",
+        "Neural Architecture Search",
+        "Synthetic Data"
+      ]
+    },
+    {
+      "name": "Bosch Center for Artificial Intelligence (BCAI), Robert Bosch GmbH",
+      "position": "Research Scientist",
+      "url": "https://www.bosch-ai.com/",
+      "startDate": "2016-03-01",
+      "endDate": "2019-12-31",
+      "summary": "",
+      "highlights": [
+        "Adversarial Examples",
+        "Neural Architecture Search"
+      ]
+    },
+    {
+      "name": "Robotics Research Group, University of Bremen",
+      "position": "Research Assistant",
+      "url": "https://www.uni-bremen.de/robotik",
+      "startDate": "2009-11-01",
+      "endDate": "2016-02-29",
+      "summary": "",
+      "highlights": [
+        "Reinforcement Learning",
+        "Robot Learning",
+        "Bayesian Optimization"
+      ]
+    },
+    {
+      "name": "Robotics Research Group, University of Bremen",
+      "position": "Project Leader 'CASCADE'",
+      "url": "https://robotik.dfki-bremen.de/de/forschung/projekte/cascade",
+      "startDate": "2014-08-01",
+      "endDate": "2016-01-31",
+      "summary": "Leading the subteam in Bremen of the EU project CASCADE",
+      "highlights": ""
+    },
+    {
+      "name": "Robotics Innovation Center, German Research Center for Artificial Intelligence (DFKI RIC, Bremen)",
+      "position": "Team leader 'Sustained Learning'",
+      "url": "https://robotik.dfki-bremen.de/",
+      "startDate": "2013-01-01",
+      "endDate": "2015-12-31",
+      "summary": "Leading a team of approximately 10 researchers focusing on robotic learning.",
+      "highlights": ""
+    },    
+    {
+      "name": "Robotics Innovation Center, German Research Center for Artificial Intelligence (DFKI RIC, Bremen)",
+      "position": "Researcher",
+      "url": "https://robotik.dfki-bremen.de/",
+      "startDate": "2007-07-01",
+      "endDate": "2009-10-31",
+      "summary": "",
+      "highlights": [
+        "Brain-Computer Interfaces",
+        "Robot Learning"
+      ]
+    },
+    {
+      "name": "Robotics Research Group, University of Bremen",
+      "position": "Research Assistant",
+      "url": "https://www.uni-bremen.de/robotik",
+      "startDate": "2006-09-01",
+      "endDate": "2007-06-30",
+      "summary": "",
+      "highlights": [
+        "Reinforcement Learning"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University Bremen, Bremen, Germany",
+      "url": "https://media.suub.uni-bremen.de/handle/elib/625",
+      "area": "Hierachical Reinforcement Learning",
+      "studyType": "Dr.rer.nat. (PhD)",
+      "startDate": "2009",
+      "endDate": "2014",
+      "score": "",
+      "courses": [
+        "Learning the Structure of Continuous Markov Decision Processes"
+      ]
+    },
+    {
+      "institution": "University Münster, Münster, Germany",
+      "url": "",
+      "area": "Medical Image Registration",
+      "studyType": "Diploma in Computer Science",
+      "startDate": "2001",
+      "endDate": "2006",
+      "score": "",
+      "courses": [
+        "Matching von Baumstrukturen in der medizinischen Bildverarbeitung"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Scholarship",
+      "date": "2004 - 2006",
+      "awarder": "Studienstiftung des Deutschen Volkes (German National Academic Foundation)",
+      "summary": ""
+    }
+  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Basic"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
+}

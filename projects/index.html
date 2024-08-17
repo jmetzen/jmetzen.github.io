@@ -10,10 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Svgstudio_start | Jan Hendrik Metzen's website</title>
+    <title>projects | Jan Hendrik Metzen's website</title>
     <meta name="author" content="Jan Hendrik Metzen">
-    <meta name="description" content="Jan Metzen's website. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+    <meta name="description" content="A collection of my side-projects">
 
 
     <!-- Bootstrap & MDB -->
@@ -38,7 +37,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%AA%AA&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://jmetzen.github.io/news/svgstudio_start/">
+    <link rel="canonical" href="https://jmetzen.github.io/projects/">
 
     <!-- Dark Mode -->
     
@@ -85,8 +84,8 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/publications/">publications</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="/projects/">projects<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/repositories/">repositories</a>
@@ -119,46 +118,57 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- _layouts/post.html -->
+        <!-- page.html -->
+        <div class="post">
 
-<div class="post">
+          <header class="post-header">
+            <h1 class="post-title">projects</h1>
+            <p class="post-description">A collection of my side-projects</p>
+          </header>
 
-  <header class="post-header">
-    <h1 class="post-title">Svgstudio_start</h1>
-    <p class="post-meta">August 12, 2024</p>
-    <p class="post-tags">
-      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
+          <article>
+            <!-- pages/projects.md -->
+<div class="projects">
+  <!-- Display categorized projects -->
+  <h2 class="category">AI</h2>
+  <!-- Generate cards for each project -->
+  <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="https://svgstud.io" rel="external nofollow noopener" target="_blank">
+      <div class="card hoverable">
+<figure>
 
-    </p>
-  </header>
-
-  <article class="post-content">
+  <picture>
     
-    <div id="markdown-content">
-      <p>I have built  <a href="https://svgstud.io/" rel="external nofollow noopener" target="_blank"> SVGStud.io</a>, an AI-based tool for searching and generating Scalable Vector Graphics (SVG) files.</p>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/pegasus-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/pegasus-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/pegasus-1400.webp"></source>
+    
 
-<p>SVGStud.io offers the following core functionalities:</p>
-<ul>
-    <li> <a href="https://svgstud.io/semantic_search.html" rel="external nofollow noopener" target="_blank"> Semantic SVG Search</a> 
-        Find SVG files that match a search term or a sample image as closely as possible, from a library of more than 10,000 SVGs.
-    </li>
-    <li> <a href="https://svgstud.io/generator.html" rel="external nofollow noopener" target="_blank"> AI-based SVG Generator</a>
-        Generate novel SVGs based on textual descriptions and (optionally) example images. 
-    </li>
-    <li> <a href="https://svgstud.io/gallery.html" rel="external nofollow noopener" target="_blank"> SVG Gallery</a> 
-        Explore a gallery of all SVGs in our library. Perfect for serendipity!
-    </li>
-    <li> <a href="https://svgstud.io/g/bundles.html" rel="external nofollow noopener" target="_blank"> SVG Bundles </a> 
-        Browse a large variety of free pre-generated SVG bundles.   
-    </li>
-</ul>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/pegasus.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
-<p>All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downloaded at any time.</p>
+  </picture>
 
+</figure>
 
-    </div>
-  </article>
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">SVGStud.io</h2>
+          <p class="card-text">SVGStud.io provides free AI-based SVG generation and semantic search</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
 </div>
+  </div>
+</div>
+
+          </article>
+
+        </div>
 
       
     </div>
