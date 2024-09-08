@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Senior Expert for "Robust Scalable Perception" at <a href='https://www.bosch-ai.com/'>Bosch Center for Artificial Intelligence</a>.
+subtitle: Senior AI Researcher at IPAI Aleph Alpha Research.
 
 profile:
   align: right
@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am Senior Expert in Deep Learning at [Bosch Center for Artificial Intelligence (BCAI)](https://www.bosch-ai.com/). As a Senior Expert, I provide technical leadership in deep learning related topics in Bosch Research and the broader Bosch group. 
+I am Senior AI Researcher at IPAI Aleph Alpha Research. I was Senior Expert at [Bosch Center for Artificial Intelligence (BCAI)](https://www.bosch-ai.com/) until 08/2024.
 
 My primary research focuses on making AI (specifically computer-vision based perception) robust, reliable, and safe.  For this, we levarage strong generative models for finding [systematic errors of image classifiers on rare subgroups](https://arxiv.org/abs/2303.05072) and [systematic errors of object detectors](https://arxiv.org/abs/2309.13489).  We also [identified vulnerabilities of Transformer-based neural network against adversarial patch/token attacks](https://openaccess.thecvf.com/content/CVPR2022/papers/Lovisotto_Give_Me_Your_Attention_Dot-Product_Attention_Considered_Harmful_for_Adversarial_CVPR_2022_paper.pdf). To counteract such vulnerabilities, we developed architectures that are certifiably robust against patch attacks for [image classifiers](https://openreview.net/forum?id=hr-3PMvDpil) as well as for [semantic segmentation](https://openreview.net/forum?id=b0JxQC7JLWh). Furthermore, we proposed methods for adversarially training neural networks to become robust against [universal perturbations](https://openaccess.thecvf.com/content_ICCV_2019/papers/Mummadi_Defending_Against_Universal_Perturbations_With_Shared_Adversarial_Training_ICCV_2019_paper.pdf) and [universal adversarial patches](https://arxiv.org/abs/2101.11453). In addition, we provide methods for [test-time adaptation of neural networks to improve robustness to domain shifts](https://arxiv.org/abs/2106.14999) and study the role of [shape-biased representations on robustness to common image corruptions](https://openreview.net/forum?id=yUxUNaj2Sl).
 
