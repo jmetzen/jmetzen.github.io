@@ -125,7 +125,7 @@
           <h1 class="post-title">
            Jan Hendrik Metzen's website
           </h1>
-          <p class="desc">Senior Expert for "Robust Scalable Perception" at <a href="https://www.bosch-ai.com/" rel="external nofollow noopener" target="_blank">Bosch Center for Artificial Intelligence</a>.</p>
+          <p class="desc">Senior AI Researcher at IPAI Aleph Alpha Research.</p>
         </header>
 
         <article>
@@ -154,7 +154,7 @@
           </div>
 
           <div class="clearfix">
-            <p>I am Senior Expert in Deep Learning at <a href="https://www.bosch-ai.com/" rel="external nofollow noopener" target="_blank">Bosch Center for Artificial Intelligence (BCAI)</a>. As a Senior Expert, I provide technical leadership in deep learning related topics in Bosch Research and the broader Bosch group.</p>
+            <p>I am Senior AI Researcher at IPAI Aleph Alpha Research. I was Senior Expert at <a href="https://www.bosch-ai.com/" rel="external nofollow noopener" target="_blank">Bosch Center for Artificial Intelligence (BCAI)</a> until 08/2024.</p>
 
 <p>My primary research focuses on making AI (specifically computer-vision based perception) robust, reliable, and safe.  For this, we levarage strong generative models for finding <a href="https://arxiv.org/abs/2303.05072" rel="external nofollow noopener" target="_blank">systematic errors of image classifiers on rare subgroups</a> and <a href="https://arxiv.org/abs/2309.13489" rel="external nofollow noopener" target="_blank">systematic errors of object detectors</a>.  We also <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Lovisotto_Give_Me_Your_Attention_Dot-Product_Attention_Considered_Harmful_for_Adversarial_CVPR_2022_paper.pdf" rel="external nofollow noopener" target="_blank">identified vulnerabilities of Transformer-based neural network against adversarial patch/token attacks</a>. To counteract such vulnerabilities, we developed architectures that are certifiably robust against patch attacks for <a href="https://openreview.net/forum?id=hr-3PMvDpil" rel="external nofollow noopener" target="_blank">image classifiers</a> as well as for <a href="https://openreview.net/forum?id=b0JxQC7JLWh" rel="external nofollow noopener" target="_blank">semantic segmentation</a>. Furthermore, we proposed methods for adversarially training neural networks to become robust against <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Mummadi_Defending_Against_Universal_Perturbations_With_Shared_Adversarial_Training_ICCV_2019_paper.pdf" rel="external nofollow noopener" target="_blank">universal perturbations</a> and <a href="https://arxiv.org/abs/2101.11453" rel="external nofollow noopener" target="_blank">universal adversarial patches</a>. In addition, we provide methods for <a href="https://arxiv.org/abs/2106.14999" rel="external nofollow noopener" target="_blank">test-time adaptation of neural networks to improve robustness to domain shifts</a> and study the role of <a href="https://openreview.net/forum?id=yUxUNaj2Sl" rel="external nofollow noopener" target="_blank">shape-biased representations on robustness to common image corruptions</a>.</p>
 
@@ -227,7 +227,52 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
           <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
           <div class="publications">
             <h2 class="bibliography">2024</h2>
-<ol class="bibliography"><li>
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="metzen2024autoclip" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Jan Hendrik Metzen</em>, Piyapat Saranrittichai, and Chaithanya Kumar Mummadi</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Transactions on Machine Learning Research</em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2309.16414" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://openreview.net/pdf?id=gVNyEVKjqf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Classifiers built upon vision-language models such as CLIP have shown remarkable zero-shot performance across a broad range of image classification tasks. Prior work has studied different ways of automatically creating descriptor sets for every class based on prompt templates, ranging from manually engineered templates over templates obtained from a large language model to templates built from random words and characters. Up until now, deriving zero-shot classifiers from the respective encoded class descriptors has remained nearly unchanged, i.e., classify to the class that maximizes cosine similarity between its averaged encoded class descriptors and the image encoding. However, weighing all class descriptors equally can be suboptimal when certain descriptors match visual clues on a given image better than others. In this work, we propose AutoCLIP, a method for auto-tuning zero-shot classifiers. AutoCLIP tunes per-image weights to each prompt template at inference time, based on statistics of class descriptor-image similarities. AutoCLIP is fully unsupervised, has very low computational overhead, and can be easily implemented in few lines of code. We show that AutoCLIP outperforms baselines across a broad range of vision-language models, datasets, and prompt templates consistently and by up to 3 percent point accuracy.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 abbr"></div>
@@ -270,7 +315,8 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
           </div>
         </div>
       </div>
-</li></ol>
+</li>
+</ol>
 <h2 class="bibliography">2023</h2>
 <ol class="bibliography">
 <li>
@@ -361,50 +407,6 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
         </div>
       </div>
 </li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="metzen2023autoclip" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <em>Jan Hendrik Metzen</em>, Piyapat Saranrittichai, and Chaithanya Kumar Mummadi</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In </em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2309.16414" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a href="https://arxiv.org/pdf/2309.16414.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Classifiers built upon vision-language models such as CLIP have shown remarkable zero-shot performance across a broad range of image classification tasks. Prior work has studied different ways of automatically creating descriptor sets for every class based on prompt templates, ranging from manually engineered templates over templates obtained from a large language model to templates built from random words and characters. Up until now, deriving zero-shot classifiers from the respective encoded class descriptors has remained nearly unchanged, i.e., classify to the class that maximizes cosine similarity between its averaged encoded class descriptors and the image encoding. However, weighing all class descriptors equally can be suboptimal when certain descriptors match visual clues on a given image better than others. In this work, we propose AutoCLIP, a method for auto-tuning zero-shot classifiers. AutoCLIP tunes per-image weights to each prompt template at inference time, based on statistics of class descriptor-image similarities. AutoCLIP is fully unsupervised, has very low computational overhead, and can be easily implemented in few lines of code. We show that AutoCLIP outperforms baselines across a broad range of vision-language models, datasets, and prompt templates consistently and by up to 3 percent point accuracy.</p>
-          </div>
-        </div>
-      </div>
-</li>
 </ol>
 <h2 class="bibliography">2022</h2>
 <ol class="bibliography"><li>
@@ -485,7 +487,7 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2024 Jan Hendrik Metzen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
-Last updated: August 18, 2024.
+Last updated: September 08, 2024.
       </div>
     </footer>
 
