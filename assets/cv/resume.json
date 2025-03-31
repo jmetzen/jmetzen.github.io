@@ -238,5 +238,13 @@
   ],
   "interests": [],
   "references": [],
-  "projects": []
+  "projects": [{
+    "name": "SVGStud.io",
+    "startDate": "2024-01-01",
+    "description": "As a hobby project, I have built SVGStud.io. SVGStud.io is a powerful AI SVG generator designed for creators, designers, and professionals looking to effortlessly generate, edit, and customize Scalable Vector Graphics (SVGs). ",
+    "highlights": [
+      "SVGStud.io has more than 1000 weekly active users as of 03/2025."
+    ],
+    "url": "https://svgstud.io/"
+  }]
 }
