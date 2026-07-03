@@ -137,13 +137,13 @@
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <button class="abstract btn btn-sm z-depth-0" type="button" aria-expanded="false" aria-controls="{{ entry.key }}-abstract">Abs</button>
           {%- endif %}
           {%- if entry.arxiv %}
             <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
           {%- endif %}
           {%- if entry.bibtex_show %}
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <button class="bibtex btn btn-sm z-depth-0" type="button" aria-expanded="false" aria-controls="{{ entry.key }}-bibtex">Bib</button>
           {%- endif %}
           {%- if entry.html %}
             <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
@@ -219,14 +219,14 @@
 
           {% if entry.abstract -%}
           <!-- Hidden abstract block -->
-          <div class="abstract hidden">
+          <div id="{{ entry.key }}-abstract" class="abstract hidden" aria-hidden="true">
             <p>{{ entry.abstract }}</p>
           </div>
           {%- endif -%}
 
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
+          <div id="{{ entry.key }}-bibtex" class="bibtex hidden" aria-hidden="true">
             {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
           </div>
           {%- endif %}
