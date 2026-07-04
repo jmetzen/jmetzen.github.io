@@ -29,3 +29,7 @@ My broader interests span efficient and reliable machine learning, AutoML, and o
 Tabular foundation models · Scalable pretraining · Efficient architectures · Scaling laws · Reliable machine learning
 
 [Publications](/publications/){: .btn .btn-sm .btn-outline-primary } [Curriculum vitae](/cv/){: .btn .btn-sm .btn-outline-primary } [Google Scholar](https://scholar.google.de/citations?user=w047VfEAAAAJ){: .btn .btn-sm .btn-outline-primary } [GitHub](https://github.com/jmetzen){: .btn .btn-sm .btn-outline-primary }
+
+### Models and resources
+
+[TabPFN-3](https://huggingface.co/Prior-Labs/tabpfn_3){: .btn .btn-sm .btn-outline-primary } [Tokenizer-free HAT models](https://huggingface.co/collections/Aleph-Alpha/tfree-hat-7b-pretrained){: .btn .btn-sm .btn-outline-primary }
