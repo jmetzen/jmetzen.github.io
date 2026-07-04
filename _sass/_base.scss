@@ -1056,3 +1056,43 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+/* Compact link groups on the about page */
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.25rem 0 1rem;
+
+  .btn {
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    background-color: var(--global-card-bg-color);
+    color: var(--global-text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.25;
+    transition: background-color 150ms ease, border-color 150ms ease,
+      color 150ms ease, transform 150ms ease;
+
+    &:hover,
+    &:focus {
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 0 0.2rem var(--global-divider-color);
+      outline: none;
+    }
+
+  }
+
+  &.about-links-resources .btn {
+    padding: 0.38rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}

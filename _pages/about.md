@@ -30,8 +30,16 @@ I live in Böblingen and work in Freiburg. Outside research, I enjoy spending ti
 
 Tabular foundation models · Scalable pretraining · Efficient architectures · Scaling laws · Reliable machine learning
 
-[Publications](/publications/){: .btn .btn-sm .btn-outline-primary } [Curriculum vitae](/cv/){: .btn .btn-sm .btn-outline-primary } [Google Scholar](https://scholar.google.de/citations?user=w047VfEAAAAJ){: .btn .btn-sm .btn-outline-primary } [GitHub](https://github.com/jmetzen){: .btn .btn-sm .btn-outline-primary }
+<div class="about-links">
+  <a href="/publications/" class="btn">Publications</a>
+  <a href="/cv/" class="btn">Curriculum vitae</a>
+  <a href="https://scholar.google.de/citations?user=w047VfEAAAAJ" class="btn">Google Scholar <span aria-hidden="true">↗</span></a>
+  <a href="https://github.com/jmetzen" class="btn">GitHub <span aria-hidden="true">↗</span></a>
+</div>
 
 ### Models and resources
 
-[TabPFN-3](https://huggingface.co/Prior-Labs/tabpfn_3){: .btn .btn-sm .btn-outline-primary } [Tokenizer-free HAT models](https://huggingface.co/collections/Aleph-Alpha/tfree-hat-7b-pretrained){: .btn .btn-sm .btn-outline-primary }
+<div class="about-links about-links-resources">
+  <a href="https://huggingface.co/Prior-Labs/tabpfn_3" class="btn">TabPFN-3 <span aria-hidden="true">↗</span></a>
+  <a href="https://huggingface.co/collections/Aleph-Alpha/tfree-hat-7b-pretrained" class="btn">Tokenizer-free HAT models <span aria-hidden="true">↗</span></a>
+</div>
