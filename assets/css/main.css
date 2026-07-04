@@ -168,6 +168,26 @@ table.table a:hover:after :not(.nav-item.dropdown) {
   width: 100%;
 }
 
+:focus-visible {
+  outline: 3px solid var(--global-theme-color);
+  outline-offset: 3px;
+}
+
+.skip-to-content {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1100;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  border: 2px solid var(--global-theme-color);
+  transform: translateY(-200%);
+}
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+
 .table-dark {
   background-color: transparent;
 }
@@ -627,7 +647,8 @@ footer.sticky-bottom {
   color: var(--global-text-color);
   border-bottom: 1px dashed var(--global-text-color);
 }
-.publications ol.bibliography li .links a.btn {
+.publications ol.bibliography li .links a.btn,
+.publications ol.bibliography li .links button.btn {
   color: var(--global-text-color);
   border: 1px solid var(--global-text-color);
   padding-left: 1rem;
@@ -636,7 +657,8 @@ footer.sticky-bottom {
   padding-bottom: 0.25rem;
   margin-left: 0;
 }
-.publications ol.bibliography li .links a.btn:hover {
+.publications ol.bibliography li .links a.btn:hover,
+.publications ol.bibliography li .links button.btn:hover {
   color: var(--global-theme-color);
   border-color: var(--global-theme-color);
 }

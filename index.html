@@ -10,10 +10,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Jan Hendrik Metzen's website</title>
+    <title>Jan Hendrik Metzen</title>
     <meta name="author" content="Jan Hendrik Metzen">
-    <meta name="description" content="Jan Metzen's website. Based on [*folio](https://github.com/bogoli/-folio) design.
+    <meta name="description" content="Personal website of Jan Hendrik Metzen, a research scientist working on tabular foundation models, scalable pretraining, efficient architectures, and reliable machine learning.
 ">
+    <meta name="keywords" content="tabular foundation models, machine learning, scalable pretraining, efficient architectures, AutoML, robust AI">
 
 
     <!-- Bootstrap & MDB -->
@@ -51,7 +52,9 @@
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <a class="skip-to-content" href="#main-content">Skip to main content</a>
 
     <!-- Header -->
     <header>
@@ -73,23 +76,16 @@
 
               <!-- About -->
               <li class="nav-item active">
-                <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">About<span class="sr-only">(current)</span></a>
               </li>
               
-              <!-- Blog -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/blog/">blog</a>
-              </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+                <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/repositories/">repositories</a>
+                <a class="nav-link" href="/projects/">Projects</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/cv/">CV</a>
@@ -97,9 +93,9 @@
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
+                <button id="light-toggle" aria-label="Change color theme" title="Change theme">
+                  <i class="fas fa-moon" aria-hidden="true"></i>
+                  <i class="fas fa-sun" aria-hidden="true"></i>
                 </button>
               </li>
             </ul>
@@ -117,15 +113,15 @@
 
 
     <!-- Content -->
-    <div class="container mt-5">
+    <main id="main-content" class="container mt-5" tabindex="-1">
       
         <!-- about.html -->
       <div class="post">
         <header class="post-header">
           <h1 class="post-title">
-           Jan Hendrik Metzen's website
+           Jan Hendrik Metzen
           </h1>
-          <p class="desc">Senior AI Researcher at Aleph Alpha Research.</p>
+          <p class="desc">Research Scientist at Prior Labs · Tabular Foundation Models · Scalable Pretraining</p>
         </header>
 
         <article>
@@ -141,7 +137,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/prof_pic.png" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="prof_pic.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/prof_pic.png" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="Portrait of Jan Hendrik Metzen" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -154,49 +150,50 @@
           </div>
 
           <div class="clearfix">
-            <p>I am Senior AI Researcher at <a href="https://aleph-alpha.com/research/" rel="external nofollow noopener" target="_blank">Aleph Alpha Research</a>. As part of Aleph Alpha’s Foundation Models team, I focus on LLM pretraining and optimization. In particular, we have developed a new tokenizer-free LLM architecture that allows for efficient pretraining, domain adaptation, and inference. Moreover, we are working on a new optimization methods that allow for efficient training of large-efficient models.</p>
+            <p>I am a Research Scientist at <a href="https://priorlabs.ai/" rel="external nofollow noopener" target="_blank">Prior Labs</a>, where I develop the next generation of tabular foundation models. My work focuses on scalable pretraining, novel architectures, and scaling laws. I contribute to <a href="https://arxiv.org/abs/2605.13986" rel="external nofollow noopener" target="_blank">TabPFN-3</a>, which scales tabular foundation models to datasets with up to one million training rows while substantially accelerating training and inference.</p>
 
-<p>I was Senior Expert at <a href="https://www.bosch-ai.com/" rel="external nofollow noopener" target="_blank">Bosch Center for Artificial Intelligence (BCAI)</a> until 08/2024. My primary research focused on making AI (specifically computer-vision based perception) robust, reliable, and safe.  For this, we levaraged strong generative models for finding <a href="https://arxiv.org/abs/2303.05072" rel="external nofollow noopener" target="_blank">systematic errors of image classifiers on rare subgroups</a> and <a href="https://arxiv.org/abs/2309.13489" rel="external nofollow noopener" target="_blank">systematic errors of object detectors</a>.  We also <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Lovisotto_Give_Me_Your_Attention_Dot-Product_Attention_Considered_Harmful_for_Adversarial_CVPR_2022_paper.pdf" rel="external nofollow noopener" target="_blank">identified vulnerabilities of Transformer-based neural network against adversarial patch/token attacks</a>. To counteract such vulnerabilities, we developed architectures that are certifiably robust against patch attacks for <a href="https://openreview.net/forum?id=hr-3PMvDpil" rel="external nofollow noopener" target="_blank">image classifiers</a> as well as for <a href="https://openreview.net/forum?id=b0JxQC7JLWh" rel="external nofollow noopener" target="_blank">semantic segmentation</a>. Furthermore, we proposed methods for adversarially training neural networks to become robust against <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Mummadi_Defending_Against_Universal_Perturbations_With_Shared_Adversarial_Training_ICCV_2019_paper.pdf" rel="external nofollow noopener" target="_blank">universal perturbations</a> and <a href="https://arxiv.org/abs/2101.11453" rel="external nofollow noopener" target="_blank">universal adversarial patches</a>. In addition, we provide methods for <a href="https://arxiv.org/abs/2106.14999" rel="external nofollow noopener" target="_blank">test-time adaptation of neural networks to improve robustness to domain shifts</a> and study the role of <a href="https://openreview.net/forum?id=yUxUNaj2Sl" rel="external nofollow noopener" target="_blank">shape-biased representations on robustness to common image corruptions</a>.</p>
+<p>Previously, I was a Senior AI Researcher in <a href="https://aleph-alpha.com/research/" rel="external nofollow noopener" target="_blank">Aleph Alpha Research</a>’s Foundation Models team, working on efficient LLM pretraining, <a href="https://arxiv.org/abs/2603.15953" rel="external nofollow noopener" target="_blank">tokenizer-free architectures</a>, and large-scale optimization. Before that, I was a Senior Expert at the <a href="https://www.bosch-ai.com/" rel="external nofollow noopener" target="_blank">Bosch Center for Artificial Intelligence</a>, where my research centered on robust and reliable computer vision, neural architecture search, and synthetic data.</p>
 
-<p>A different strand of my research is automating machine learning (AutoML), specifically Neural Architecture Search. The latter research field is motivated by the vast design space of neural networks and the diversity of inference hardware. Manually tailoring a neural architecture for every type of hardware is cumbersome and not scalable - hardware-aware neural architecture search can vastly improve design efficiency and thus reduce cost of AI development. See our survey on <a href="https://jmlr.org/papers/v20/18-598.html" rel="external nofollow noopener" target="_blank">Neural Architecture Search</a> and a more recent survey on <a href="https://arxiv.org/abs/2202.07242" rel="external nofollow noopener" target="_blank">Neural Architecture Search for Dense Prediction Tasks in Computer Vision</a>. Recently, we developed <a href="https://arxiv.org/abs/2309.16414" rel="external nofollow noopener" target="_blank">AutoCLIP</a>, a method auto-tuning zero-shot classifiers for vision-language models that improves zero-shot performance across a broad range of domains.</p>
+<p>My broader interests span efficient and reliable machine learning, AutoML, and open-source software. I am an <a href="https://ellis.eu/members" rel="external nofollow noopener" target="_blank">ELLIS</a> member, an <a href="https://eliza.school/about-us/" rel="external nofollow noopener" target="_blank">ELIZA Industrial Fellow</a>, and an Area Chair for <a href="https://neurips.cc/Conferences/2026" rel="external nofollow noopener" target="_blank">NeurIPS 2026</a>. I have also contributed to <a href="https://scikit-learn.org/stable/about.html#authors" rel="external nofollow noopener" target="_blank">scikit-learn</a>, including its probability-calibration, kernel-ridge, and Gaussian-process modules.</p>
 
-<p>I also love contributing to machine learning libraries, both open source and proprietary. I am a <a href="https://scikit-learn.org/stable/about.html#authors" rel="external nofollow noopener" target="_blank">core contributor of scikit-learn</a>, where I contributed tools for <a href="https://scikit-learn.org/stable/modules/calibration.html" rel="external nofollow noopener" target="_blank">probability calibration of classifiers</a> and for <a href="https://scikit-learn.org/stable/modules/kernel_ridge.html" rel="external nofollow noopener" target="_blank">kernel ridge regression</a>. Moreover, I have written a complete redesign of the <a href="https://github.com/scikit-learn/scikit-learn/pull/4270" rel="external nofollow noopener" target="_blank">Gaussian process module</a> for scikit-learn. At BCAI, I am/was involved as core developer for frameworks for deep learning training pipelines, neural architecture search, and robustness evaluation.</p>
+<h3 id="research-interests">Research interests</h3>
 
-<p>I am a member of <a href="https://ellis.eu/members" rel="external nofollow noopener" target="_blank">ELLIS</a> and regularly review for scientific conferences and journals such as ICLR, ICML, NeurIPS, and TMLR. I was senior area chair of the <a href="https://2022.automl.cc/" rel="external nofollow noopener" target="_blank">AutoML 2022 conference</a> and co-organizer of the workshops <a href="https://sites.google.com/view/nas2020" rel="external nofollow noopener" target="_blank">NAS@ICLR 2020</a> and <a href="https://sites.google.com/view/nas2021" rel="external nofollow noopener" target="_blank">NAS@ICLR 2021</a>. I have been recognized by ICLR as <a href="https://iclr.cc/Conferences/2022/Reviewers" rel="external nofollow noopener" target="_blank">Highlighted Reviewer in 2022</a> and <a href="https://iclr.cc/Conferences/2021/Reviewers" rel="external nofollow noopener" target="_blank">Outstanding Reviewer in 2021</a>.</p>
+<p>Tabular foundation models · Scalable pretraining · Efficient architectures · Scaling laws · Reliable machine learning</p>
 
-<p>See also my <a href="https://registry.jsonresume.org/jmetzen" rel="external nofollow noopener" target="_blank">curriculum vitae</a> for more information. Feel free to contact me via <a href="mailto:janmetzen@mailbox.org">janmetzen@mailbox.org</a>.</p>
-
+<p><a href="/publications/" class="btn btn-sm btn-outline-primary">Publications</a> <a href="/cv/" class="btn btn-sm btn-outline-primary">Curriculum vitae</a> <a href="https://scholar.google.de/citations?user=w047VfEAAAAJ" class="btn btn-sm btn-outline-primary" rel="external nofollow noopener" target="_blank">Google Scholar</a> <a href="https://github.com/jmetzen" class="btn btn-sm btn-outline-primary" rel="external nofollow noopener" target="_blank">GitHub</a></p>
 
           </div>
 
           <!-- News -->
           <h2><a href="/news/" style="color: inherit;">news</a></h2>          <div class="news">
-            <div class="table-responsive">
+            <div class="table-responsive" style="max-height: 60vw">
               <table class="table table-sm table-borderless">
               
                 <tr>
+                  <th scope="row">May 13, 2026</th>
+                  <td>
+                    We released the <a href="https://arxiv.org/abs/2605.13986" rel="external nofollow noopener" target="_blank">TabPFN-3 technical report</a>, scaling tabular foundation models to datasets with up to one million training rows.
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Mar 16, 2026</th>
+                  <td>
+                    As part of my previous role at Aleph Alpha Research, I contributed to <a href="https://arxiv.org/abs/2603.15953" rel="external nofollow noopener" target="_blank">A Family of LLMs Liberated from Static Vocabularies</a>, presenting tokenizer-free architectures for efficient pretraining, adaptation, and inference.
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Feb 1, 2026</th>
+                  <td>
+                    I joined <a href="https://priorlabs.ai/" rel="external nofollow noopener" target="_blank">Prior Labs</a> as a Research Scientist, working on the next generation of tabular foundation models.
+
+                  </td>
+                </tr>
+                <tr>
                   <th scope="row">Aug 12, 2024</th>
                   <td>
-                    I have built  <a href="https://svgstud.io/" rel="external nofollow noopener" target="_blank"> SVGStud.io</a>, an AI-based tool for searching and generating Scalable Vector Graphics (SVG) files.
-
-SVGStud.io offers the following core functionalities:
-<ul>
-    <li> <a href="https://svgstud.io/semantic_search.html" rel="external nofollow noopener" target="_blank"> Semantic SVG Search</a> 
-        Find SVG files that match a search term or a sample image as closely as possible, from a library of more than 10,000 SVGs.
-    </li>
-    <li> <a href="https://svgstud.io/generator.html" rel="external nofollow noopener" target="_blank"> AI-based SVG Generator</a>
-        Generate novel SVGs based on textual descriptions and (optionally) example images. 
-    </li>
-    <li> <a href="https://svgstud.io/gallery.html" rel="external nofollow noopener" target="_blank"> SVG Gallery</a> 
-        Explore a gallery of all SVGs in our library. Perfect for serendipity!
-    </li>
-    <li> <a href="https://svgstud.io/g/bundles.html" rel="external nofollow noopener" target="_blank"> SVG Bundles </a> 
-        Browse a large variety of free pre-generated SVG bundles.   
-    </li>
-</ul>
-
-All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downloaded at any time.
-
+                    I launched <a href="https://svgstud.io/" rel="external nofollow noopener" target="_blank">SVGStud.io</a>, an AI-powered tool for searching, generating, and customizing scalable vector graphics.
 
                   </td>
                 </tr>
@@ -205,28 +202,53 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
           </div>
 
           <!-- Latest posts -->
-          <h2><a href="/blog/" style="color: inherit;">latest posts</a></h2>
-          <div class="news">
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-              
-                <tr>
-                  <th scope="row">Aug 18, 2024</th>
-                  <td>
-                    
-                      <a class="news-title" href="/blog/2024/svgstudio-lora/">Building SVGStud.io: Fine-tuning Stable Diffusion XL for Efficient SVG Generation</a>
-                    
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
-
+          
 
           <!-- Selected papers -->
           <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
           <div class="publications">
-            <h2 class="bibliography">2024</h2>
+            <h2 class="bibliography">2026</h2>
+<ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="grinsztajn2026tabpfn3" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">TabPFN-3: Technical Report</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Léo Grinsztajn, Klemens Flöge, Oscar Key, Felix Birkel, Philipp Jund, Brendan Roof, Mihir Manium, Shi Bin Hoo, Magnus Bühler, Anurag Garg, Dominik Safaric, Jake Robertson, Benjamin Jäger, Simone Alessi, Adrian Hayler, Vladyslav Moroshan, Lennart Purucker, Philipp Singer, Alan Arazi, Julien Siems, <em>Jan Hendrik Metzen</em>, Georg Grab, Nick Erickson, Siyuan Guo, Eliott Kalfon, Simon Bing, David Salinas, Clara Cornu, Lilly Charlotte Wehrhahn, Diana Kriuchkova, Kursat Kaya, Lydia Sidhoum, Marie Salmon, Jerry Chen, Madelon Hulsebos, Yann LeCun, Samuel Müller, Bernhard Schölkopf, Sauraj Gambhir, Noah Hollmann, and Frank Hutter</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="http://arxiv.org/abs/2605.13986" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://arxiv.org/pdf/2605.13986" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li></ol>
+<h2 class="bibliography">2024</h2>
 <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
@@ -255,7 +277,7 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
 
           <!-- Links/Buttons -->
           <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <button class="abstract btn btn-sm z-depth-0" type="button" aria-expanded="false" aria-controls="metzen2024autoclip-abstract">Abs</button>
             <a href="http://arxiv.org/abs/2309.16414" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a href="https://openreview.net/pdf?id=gVNyEVKjqf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
@@ -266,7 +288,7 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
           </div>
 
           <!-- Hidden abstract block -->
-          <div class="abstract hidden">
+          <div id="metzen2024autoclip-abstract" class="abstract hidden" aria-hidden="true">
             <p>Classifiers built upon vision-language models such as CLIP have shown remarkable zero-shot performance across a broad range of image classification tasks. Prior work has studied different ways of automatically creating descriptor sets for every class based on prompt templates, ranging from manually engineered templates over templates obtained from a large language model to templates built from random words and characters. Up until now, deriving zero-shot classifiers from the respective encoded class descriptors has remained nearly unchanged, i.e., classify to the class that maximizes cosine similarity between its averaged encoded class descriptors and the image encoding. However, weighing all class descriptors equally can be suboptimal when certain descriptors match visual clues on a given image better than others. In this work, we propose AutoCLIP, a method for auto-tuning zero-shot classifiers. AutoCLIP tunes per-image weights to each prompt template at inference time, based on statistics of class descriptor-image similarities. AutoCLIP is fully unsupervised, has very low computational overhead, and can be easily implemented in few lines of code. We show that AutoCLIP outperforms baselines across a broad range of vision-language models, datasets, and prompt templates consistently and by up to 3 percent point accuracy.</p>
           </div>
         </div>
@@ -299,7 +321,7 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
 
           <!-- Links/Buttons -->
           <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <button class="abstract btn btn-sm z-depth-0" type="button" aria-expanded="false" aria-controls="wang2024label-abstract">Abs</button>
             <a href="http://arxiv.org/abs/2407.01790" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a href="https://arxiv.org/pdf/2407.01790" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
@@ -310,7 +332,7 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
           </div>
 
           <!-- Hidden abstract block -->
-          <div class="abstract hidden">
+          <div id="wang2024label-abstract" class="abstract hidden" aria-hidden="true">
             <p>Recent work has shown great progress in integrating spatial conditioning to control large, pre-trained text-to-image diffusion models. Despite these advances, existing methods describe the spatial image content using hand-crafted conditioning inputs, which are either semantically ambiguous (e.g., edges) or require expensive manual annotations (e.g., semantic segmentation). To address these limitations, we propose a new label-free way of conditioning diffusion models to enable fine-grained spatial control. We introduce the concept of \emphneural semantic image synthesis, which uses neural layouts extracted from pre-trained foundation models as conditioning. Neural layouts are advantageous as they provide rich descriptions of the desired image, containing both semantics and detailed geometry of the scene. We experimentally show that images synthesized via neural semantic image synthesis achieve similar or superior pixel-level alignment of semantic classes compared to those created using expensive semantic label maps. At the same time, they capture better semantics, instance separation, and object orientation than other label-free conditioning options, such as edges or depth. Moreover, we show that images generated by neural layout conditioning can effectively augment real data for training various perception tasks.</p>
           </div>
         </div>
@@ -385,7 +407,7 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
 
           <!-- Links/Buttons -->
           <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <button class="abstract btn btn-sm z-depth-0" type="button" aria-expanded="false" aria-controls="metzen2023identification-abstract">Abs</button>
             <a href="http://arxiv.org/abs/2303.05072" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a href="https://arxiv.org/pdf/2303.05072.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
@@ -396,7 +418,7 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
           </div>
 
           <!-- Hidden abstract block -->
-          <div class="abstract hidden">
+          <div id="metzen2023identification-abstract" class="abstract hidden" aria-hidden="true">
             <p>Despite excellent average-case performance of many image classifiers, their performance can substantially deteriorate on semantically coherent subgroups of the data that were under-represented in the training data. These systematic errors can impact both fairness for demographic minority groups as well as robustness and safety under domain shift. A major challenge is to identify such subgroups with subpar performance when the subgroups are not annotated and their occurrence is very rare. We leverage recent advances in text-to-image models and search in the space of textual descriptions of subgroups ("prompts") for subgroups where the target model has low performance on the prompt-conditioned synthesized data. To tackle the exponentially growing number of subgroups, we employ combinatorial testing. We denote this procedure as PromptAttack as it can be interpreted as an adversarial attack in a prompt space. We study subgroup coverage and identifiability with PromptAttack in a controlled setting and find that it identifies systematic errors with high accuracy. Thereupon, we apply PromptAttack to ImageNet classifiers and identify novel systematic errors on rare subgroups. </p>
           </div>
         </div>
@@ -431,7 +453,7 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
 
           <!-- Links/Buttons -->
           <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <button class="abstract btn btn-sm z-depth-0" type="button" aria-expanded="false" aria-controls="lovisotto2022give-abstract">Abs</button>
             <a href="http://arxiv.org/abs/2203.13639" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a href="https://arxiv.org/pdf/2203.13639.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
@@ -442,7 +464,7 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
           </div>
 
           <!-- Hidden abstract block -->
-          <div class="abstract hidden">
+          <div id="lovisotto2022give-abstract" class="abstract hidden" aria-hidden="true">
             <p>Neural architectures based on attention such as vision transformers are revolutionizing image recognition. Their main benefit is that attention allows reasoning about all parts of a scene jointly. In this paper, we show how the global reasoning of (scaled) dot-product attention can be the source of a major vulnerability when confronted with adversarial patch attacks. We provide a theoretical understanding of this vulnerability and relate it to an adversary’s ability to misdirect the attention of all queries to a single key token under the control of the adversarial patch. We propose novel adversarial objectives for crafting adversarial patches which target this vulnerability explicitly. We show the effectiveness of the proposed patch attacks on popular image classification (ViTs and DeiTs) and object detection models (DETR). We find that adversarial patches occupying 0.5% of the input can lead to robust accuracies as low as 0% for ViT on ImageNet, and reduce the mAP of DETR on MS COCO to less than 3%.</p>
           </div>
         </div>
@@ -454,12 +476,12 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
           <!-- Social -->
             <div class="social">
               <div class="contact-icons">
-                <a href="mailto:%6A%61%6E%6D%65%74%7A%65%6E@%6D%61%69%6C%62%6F%78.%6F%72%67" title="email"><i class="fas fa-envelope"></i></a>
-            <a href="https://scholar.google.com/citations?user=w047VfEAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
-            <a href="https://github.com/jmetzen" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/jan-hendrik-metzen" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/jan_metzen" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
+                <a href="mailto:%6A%61%6E%6D%65%74%7A%65%6E@%6D%61%69%6C%62%6F%78.%6F%72%67" aria-label="email" title="email"><i aria-hidden="true" class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=w047VfEAAAAJ" aria-label="Google Scholar" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i aria-hidden="true" class="ai ai-google-scholar"></i></a>
+            <a href="https://github.com/jmetzen" aria-label="GitHub" title="GitHub" rel="external nofollow noopener" target="_blank"><i aria-hidden="true" class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jan-hendrik-metzen" aria-label="LinkedIn" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/jan_metzen" aria-label="Twitter" title="Twitter" rel="external nofollow noopener" target="_blank"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+            <a href="/feed.xml" aria-label="RSS Feed" title="RSS Feed"><i aria-hidden="true" class="fas fa-rss-square"></i></a>
             
 
               </div>
@@ -475,13 +497,12 @@ All SVGs in SVGStud.io are licensed under CC-BY-SA 4.0 license and can be downlo
 </div>
 
       
-    </div>
+    </main>
 
-    <!-- Footer -->    
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
-        © Copyright 2025 Jan Hendrik Metzen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
-Last updated: July 09, 2025.
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2026 Jan Hendrik Metzen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+Last updated: July 04, 2026.
       </div>
     </footer>
 
@@ -507,7 +528,7 @@ Last updated: July 09, 2025.
 
   <!-- Load Common JS -->
   <script src="/assets/js/no_defer.js"></script>
-  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/common.js?v=1783167202"></script>
   <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
 
     
