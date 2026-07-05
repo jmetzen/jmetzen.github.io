@@ -1,9 +1,8 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV
+title: Curriculum Vitae
 nav: true
 nav_order: 4
 cv_pdf: resume.pdf
-description: Curriculum Vitae
 ---
