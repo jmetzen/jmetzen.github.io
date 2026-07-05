@@ -7,6 +7,12 @@ nav: true
 nav_order: 1
 ---
 <!-- _pages/publications.md -->
+<p>
+  <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">
+    View my Google Scholar profile <span aria-hidden="true">↗</span>
+  </a>
+</p>
+
 <div class="publication-tools" aria-label="Publication filters">
   <label for="publication-search">Search publications</label>
   <div class="publication-search-row">

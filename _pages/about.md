@@ -24,7 +24,7 @@ Previously, I was a Senior AI Researcher in [Aleph Alpha Research](https://aleph
 
 My broader interests span efficient and reliable machine learning, AutoML, and open-source software. I am an [ELLIS](https://ellis.eu/members) member, an [ELIZA Industrial Fellow](https://eliza.school/about-us/), and an Area Chair for [NeurIPS 2026](https://neurips.cc/Conferences/2026). I have also contributed to [scikit-learn](https://scikit-learn.org/stable/about.html#authors), including its probability-calibration, kernel-ridge, and Gaussian-process modules.
 
-I live in Böblingen and work in Freiburg. Outside research, I enjoy spending time with my wife and our three children. I am always happy to connect with people working on tabular foundation models, scalable pretraining, efficient or tokenizer-free architectures, and open-source machine learning.
+I live in Böblingen and work in Freiburg. Outside research, I enjoy spending time with my wife and our three children. I am always happy to connect with people working on tabular foundation models, scalable pretraining, efficient or tokenizer-free architectures, and open-source machine learning. <a href="mailto:{{ site.email | encode_email }}">Contact me</a>.
 
 <div class="about-links">
   <a href="/publications/" class="btn">Publications</a>
