@@ -10,9 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CV | Jan Hendrik Metzen</title>
+    <title>Curriculum Vitae | Jan Hendrik Metzen</title>
     <meta name="author" content="Jan Hendrik Metzen">
-    <meta name="description" content="Curriculum Vitae">
+    <meta name="description" content="Personal website of Jan Hendrik Metzen, a research scientist working on tabular foundation models, scalable pretraining, efficient architectures, and reliable machine learning.
+">
     <meta name="keywords" content="tabular foundation models, machine learning, scalable pretraining, efficient architectures, AutoML, robust AI">
 
 
@@ -87,7 +88,7 @@
                 <a class="nav-link" href="/projects/">Projects</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="/cv/">CV<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/cv/">Curriculum Vitae<span class="sr-only">(current)</span></a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -116,16 +117,15 @@
       
         <!-- _layouts/cv.html -->
 
-<div class="post">
+<div class="post cv-page">
 
-  <header class="post-header">
-    <h1 class="post-title">CV <a href="/assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
-</h1>
-    <p class="post-description">Curriculum Vitae</p>
+  <div class="cv-sticky-header">
+  <header class="post-header cv-hero">
+    <h1 class="post-title">Curriculum Vitae</h1>
+    <a href="/assets/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" class="cv-download"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>Download PDF</span></a>
   </header>
 
-  <h4>Table of contents</h4>
-  <ul class="timeline">
+  <nav class="cv-nav" aria-label="CV sections">
   
     
       
@@ -137,46 +137,25 @@
       
     
     
-    <li><a href="#work"><span class="badge-toc">Work</span></a></li>
+    <a href="#work">Work</a>
   
     
       
     
     
-    <li><a href="#volunteer"><span class="badge-toc">Volunteer</span></a></li>
+    <a href="#volunteer">Volunteer</a>
   
     
       
     
     
-    <li><a href="#education"><span class="badge-toc">Education</span></a></li>
+    <a href="#education">Education</a>
   
     
       
     
     
-    <li><a href="#awards"><span class="badge-toc">Awards</span></a></li>
-  
-    
-      
-    
-    
-      
-    
-      
-    
-    
-      
-    
-      
-    
-    
-      
-    
-      
-    
-    
-    <li><a href="#languages"><span class="badge-toc">Languages</span></a></li>
+    <a href="#awards">Awards</a>
   
     
       
@@ -192,9 +171,31 @@
       
     
     
-    <li><a href="#projects"><span class="badge-toc">Projects</span></a></li>
+      
+    
+      
+    
+    
+    <a href="#languages">Languages</a>
   
-  </ul>
+    
+      
+    
+    
+      
+    
+      
+    
+    
+      
+    
+      
+    
+    
+    <a href="#projects">Projects</a>
+  
+  </nav>
+  </div>
 
   <article>
     <div class="cv">
@@ -210,7 +211,7 @@
         
         
         <a class="anchor" id="work"></a>
-        <div class="card mt-3 p-3">
+        <section class="card cv-section mt-3 p-3">
           <h3 class="card-title font-weight-medium">Work</h3>
           <div>
           
@@ -459,14 +460,14 @@
 </ul>
             
           </div>
-        </div>
+        </section>
       
         
           
         
         
         <a class="anchor" id="volunteer"></a>
-        <div class="card mt-3 p-3">
+        <section class="card cv-section mt-3 p-3">
           <h3 class="card-title font-weight-medium">Volunteer</h3>
           <div>
           
@@ -666,14 +667,14 @@
 </ul>
             
           </div>
-        </div>
+        </section>
       
         
           
         
         
         <a class="anchor" id="education"></a>
-        <div class="card mt-3 p-3">
+        <section class="card cv-section mt-3 p-3">
           <h3 class="card-title font-weight-medium">Education</h3>
           <div>
           
@@ -735,14 +736,14 @@
 </ul>
             
           </div>
-        </div>
+        </section>
       
         
           
         
         
         <a class="anchor" id="awards"></a>
-        <div class="card mt-3 p-3">
+        <section class="card cv-section mt-3 p-3">
           <h3 class="card-title font-weight-medium">Awards</h3>
           <div>
           
@@ -767,7 +768,7 @@
 </ul>
             
           </div>
-        </div>
+        </section>
       
         
           
@@ -789,7 +790,7 @@
         
         
         <a class="anchor" id="languages"></a>
-        <div class="card mt-3 p-3">
+        <section class="card cv-section mt-3 p-3">
           <h3 class="card-title font-weight-medium">Languages</h3>
           <div>
           
@@ -878,7 +879,7 @@
   </div>
             
           </div>
-        </div>
+        </section>
       
         
           
@@ -895,7 +896,7 @@
         
         
         <a class="anchor" id="projects"></a>
-        <div class="card mt-3 p-3">
+        <section class="card cv-section mt-3 p-3">
           <h3 class="card-title font-weight-medium">Projects</h3>
           <div>
           
@@ -926,12 +927,13 @@
 </ul>
             
           </div>
-        </div>
+        </section>
       
       </div>
   </article>
 
 </div>
+
 
       
     </main>
@@ -939,7 +941,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Jan Hendrik Metzen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
-Last updated: July 04, 2026.
+Last updated: July 05, 2026.
       </div>
     </footer>
 
@@ -965,7 +967,7 @@ Last updated: July 04, 2026.
 
   <!-- Load Common JS -->
   <script src="/assets/js/no_defer.js"></script>
-  <script defer src="/assets/js/common.js?v=1783167202"></script>
+  <script defer src="/assets/js/common.js?v=1783238077"></script>
   <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
 
     
@@ -981,7 +983,6 @@ Last updated: July 04, 2026.
     };
   </script>
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
     
     

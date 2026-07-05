@@ -62,7 +62,7 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
-          
+          <a class="navbar-brand title font-weight-lighter" href="/">Jan Hendrik Metzen</a>
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -88,7 +88,7 @@
                 <a class="nav-link" href="/projects/">Projects</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">CV</a>
+                <a class="nav-link" href="/cv/">Curriculum Vitae</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -156,30 +156,63 @@
 
 <p>My broader interests span efficient and reliable machine learning, AutoML, and open-source software. I am an <a href="https://ellis.eu/members" rel="external nofollow noopener" target="_blank">ELLIS</a> member, an <a href="https://eliza.school/about-us/" rel="external nofollow noopener" target="_blank">ELIZA Industrial Fellow</a>, and an Area Chair for <a href="https://neurips.cc/Conferences/2026" rel="external nofollow noopener" target="_blank">NeurIPS 2026</a>. I have also contributed to <a href="https://scikit-learn.org/stable/about.html#authors" rel="external nofollow noopener" target="_blank">scikit-learn</a>, including its probability-calibration, kernel-ridge, and Gaussian-process modules.</p>
 
-<h3 id="research-interests">Research interests</h3>
+<p>I live in Böblingen and work in Freiburg. Outside research, I enjoy spending time with my wife and our three children. I am always happy to connect with people working on tabular foundation models, scalable pretraining, efficient or tokenizer-free architectures, and open-source machine learning. <a href="mailto:%6A%61%6E%6D%65%74%7A%65%6E@%6D%61%69%6C%62%6F%78.%6F%72%67">Contact me</a>.</p>
 
-<p>Tabular foundation models · Scalable pretraining · Efficient architectures · Scaling laws · Reliable machine learning</p>
+<div class="about-links">
+  <a href="/publications/" class="btn">Publications</a>
+  <a href="/cv/" class="btn">Curriculum Vitae</a>
+  <a href="https://scholar.google.de/citations?user=w047VfEAAAAJ" class="btn" rel="external nofollow noopener" target="_blank">Google Scholar <span aria-hidden="true">↗</span></a>
+  <a href="https://github.com/jmetzen" class="btn" rel="external nofollow noopener" target="_blank">GitHub <span aria-hidden="true">↗</span></a>
+  <a href="https://huggingface.co/Prior-Labs/tabpfn_3" class="btn" rel="external nofollow noopener" target="_blank">TabPFN-3 <span aria-hidden="true">↗</span></a>
+  <a href="https://huggingface.co/collections/Aleph-Alpha/tfree-hat-7b-pretrained" class="btn" rel="external nofollow noopener" target="_blank">Tokenizer-Free HAT Models <span aria-hidden="true">↗</span></a>
+</div>
 
-<p><a href="/publications/" class="btn btn-sm btn-outline-primary">Publications</a> <a href="/cv/" class="btn btn-sm btn-outline-primary">Curriculum vitae</a> <a href="https://scholar.google.de/citations?user=w047VfEAAAAJ" class="btn btn-sm btn-outline-primary" rel="external nofollow noopener" target="_blank">Google Scholar</a> <a href="https://github.com/jmetzen" class="btn btn-sm btn-outline-primary" rel="external nofollow noopener" target="_blank">GitHub</a></p>
+<h3 id="research-interests">Research Interests</h3>
+
+<div class="research-interests">
+<details>
+<summary>Tabular Foundation Models and Scalable Pretraining</summary>
+<p>I work on foundation models for structured data that learn from diverse (synthetic) datasets during pretraining and can then fit entirely new datasets in context—without fine-tuning—effectively turning model fitting into fast, direct inference. My current focus is scaling these models to substantially larger datasets, understanding their scaling behavior, and improving the efficiency of both pretraining and inference. This work includes <a href="https://arxiv.org/abs/2605.13986" rel="external nofollow noopener" target="_blank">TabPFN-3</a>, which extends tabular foundation models to datasets with up to one million training rows.</p>
+</details>
+
+<details>
+<summary>Efficient and Tokenizer-Free Architectures</summary>
+<p>I am interested in architectures that make large-scale pretraining and inference more efficient. At Aleph Alpha Research, I worked on tokenizer-free language models, domain adaptation, and large-scale optimization. Our <a href="https://arxiv.org/abs/2603.15953" rel="external nofollow noopener" target="_blank">Hierarchical Autoregressive Transformer (HAT)</a> uses a hierarchical architecture in which the encoder and decoder operate on bytes, while the backbone operates on regex-defined words; we scaled this approach to models with up to 70 billion parameters. Building on HAT, <a href="https://arxiv.org/abs/2601.22805" rel="external nofollow noopener" target="_blank">SOMBRERO</a> learns the sequence aggregation end to end instead of relying on predefined word boundaries.</p>
+</details>
+
+<details>
+<summary>Reliable and Robust Machine Learning</summary>
+<p>My work on reliable computer vision studied both how models fail and how to make them safer. We used generative models to uncover <a href="https://arxiv.org/abs/2303.05072" rel="external nofollow noopener" target="_blank">systematic errors of image classifiers on rare subgroups</a> and <a href="https://arxiv.org/abs/2309.13489" rel="external nofollow noopener" target="_blank">systematic errors of object detectors</a>, and identified <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Lovisotto_Give_Me_Your_Attention_Dot-Product_Attention_Considered_Harmful_for_Adversarial_CVPR_2022_paper.pdf" rel="external nofollow noopener" target="_blank">vulnerabilities of Transformer-based networks to adversarial patch and token attacks</a>.</p>
+<p>We developed architectures that are certifiably robust against patch attacks for <a href="https://openreview.net/forum?id=hr-3PMvDpil" rel="external nofollow noopener" target="_blank">image classification</a> and <a href="https://openreview.net/forum?id=b0JxQC7JLWh" rel="external nofollow noopener" target="_blank">semantic segmentation</a>, as well as adversarial-training methods for <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Mummadi_Defending_Against_Universal_Perturbations_With_Shared_Adversarial_Training_ICCV_2019_paper.pdf" rel="external nofollow noopener" target="_blank">universal perturbations</a> and <a href="https://arxiv.org/abs/2101.11453" rel="external nofollow noopener" target="_blank">universal adversarial patches</a>. I also worked on <a href="https://arxiv.org/abs/2106.14999" rel="external nofollow noopener" target="_blank">test-time adaptation under domain shift</a> and studied how <a href="https://openreview.net/forum?id=yUxUNaj2Sl" rel="external nofollow noopener" target="_blank">shape-biased representations affect robustness to common image corruptions</a>.</p>
+</details>
+
+<details>
+<summary>AutoML and Neural Architecture Search</summary>
+<p>The vast design space of neural networks and the diversity of inference hardware make manual architecture design difficult to scale. Hardware-aware neural architecture search can automate this process, improving design efficiency and reducing the cost of AI development. For an overview, see our survey on <a href="https://jmlr.org/papers/v20/18-598.html" rel="external nofollow noopener" target="_blank">Neural Architecture Search</a> and our survey on <a href="https://arxiv.org/abs/2202.07242" rel="external nofollow noopener" target="_blank">Neural Architecture Search for Dense Prediction Tasks in Computer Vision</a>.</p>
+<p>My work in this area also includes <a href="https://arxiv.org/abs/1711.04528" rel="external nofollow noopener" target="_blank">efficient architecture search through network morphisms</a>, <a href="https://arxiv.org/abs/1804.09081" rel="external nofollow noopener" target="_blank">multi-objective NAS via Lamarckian evolution</a>, and <a href="https://arxiv.org/abs/1911.11090" rel="external nofollow noopener" target="_blank">meta-learning neural architectures for few-shot learning</a>. We also collected practical lessons for making search more effective in our <a href="https://arxiv.org/abs/2107.03719" rel="external nofollow noopener" target="_blank">Bag of Tricks for Neural Architecture Search</a>.</p>
+<p>I also co-developed <a href="https://arxiv.org/abs/2309.16414" rel="external nofollow noopener" target="_blank">AutoCLIP</a>, which automatically tunes zero-shot classifiers for vision-language models and improves performance across a broad range of domains.</p>
+</details>
+
+</div>
 
           </div>
 
           <!-- News -->
-          <h2><a href="/news/" style="color: inherit;">news</a></h2>          <div class="news">
+          <h2><a href="/news/" style="color: inherit;">News</a></h2>          <div class="news">
             <div class="table-responsive" style="max-height: 60vw">
               <table class="table table-sm table-borderless">
               
                 <tr>
                   <th scope="row">May 13, 2026</th>
                   <td>
-                    We released the <a href="https://arxiv.org/abs/2605.13986" rel="external nofollow noopener" target="_blank">TabPFN-3 technical report</a>, scaling tabular foundation models to datasets with up to one million training rows.
+                    We released the <a href="https://arxiv.org/abs/2605.13986" rel="external nofollow noopener" target="_blank">TabPFN-3 technical report</a> and <a href="https://huggingface.co/Prior-Labs/tabpfn_3" rel="external nofollow noopener" target="_blank">model weights on Hugging Face</a>, scaling tabular foundation models to datasets with up to one million training rows.
 
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">Mar 16, 2026</th>
                   <td>
-                    As part of my previous role at Aleph Alpha Research, I contributed to <a href="https://arxiv.org/abs/2603.15953" rel="external nofollow noopener" target="_blank">A Family of LLMs Liberated from Static Vocabularies</a>, presenting tokenizer-free architectures for efficient pretraining, adaptation, and inference.
+                    As part of my previous role at Aleph Alpha Research, I contributed to <a href="https://arxiv.org/abs/2603.15953" rel="external nofollow noopener" target="_blank">A Family of LLMs Liberated from Static Vocabularies</a>, presenting tokenizer-free architectures for efficient pretraining, adaptation, and inference. The <a href="https://huggingface.co/collections/Aleph-Alpha/tfree-hat-7b-pretrained" rel="external nofollow noopener" target="_blank">HAT model family is available on Hugging Face</a>.
 
                   </td>
                 </tr>
@@ -205,7 +238,7 @@
           
 
           <!-- Selected papers -->
-          <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
+          <h2><a href="/publications/" style="color: inherit;">Selected Publications</a></h2>
           <div class="publications">
             <h2 class="bibliography">2026</h2>
 <ol class="bibliography"><li>
@@ -237,6 +270,7 @@
           <div class="links">
             <a href="http://arxiv.org/abs/2605.13986" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a href="https://arxiv.org/pdf/2605.13986" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://huggingface.co/Prior-Labs/tabpfn_3" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Models</a>
           </div>
           
           <div class="badges">
@@ -502,7 +536,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2026 Jan Hendrik Metzen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
-Last updated: July 04, 2026.
+Last updated: July 05, 2026.
       </div>
     </footer>
 
@@ -528,7 +562,7 @@ Last updated: July 04, 2026.
 
   <!-- Load Common JS -->
   <script src="/assets/js/no_defer.js"></script>
-  <script defer src="/assets/js/common.js?v=1783167202"></script>
+  <script defer src="/assets/js/common.js?v=1783238077"></script>
   <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
 
     
@@ -544,7 +578,6 @@ Last updated: July 04, 2026.
     };
   </script>
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
     
     

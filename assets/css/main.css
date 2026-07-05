@@ -567,6 +567,58 @@ footer.sticky-bottom {
   text-align: right;
 }
 
+.publication-tools {
+  margin: 2rem 0 2.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+}
+.publication-tools label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.publication-tools .publication-search-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.publication-tools input[type=search] {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.65rem 0.8rem;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+}
+.publication-tools input[type=search]:focus {
+  border-color: var(--global-theme-color);
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+}
+.publication-tools button {
+  min-height: 44px;
+  min-width: 5rem;
+  color: var(--global-text-color);
+  border: 1px solid var(--global-divider-color);
+  white-space: nowrap;
+}
+.publication-tools .publication-year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+  margin-top: 1rem;
+}
+.publication-tools .publication-year-nav a {
+  padding: 0.25rem 0;
+}
+.publication-tools .publication-results {
+  min-height: 1.5rem;
+  margin: 0.75rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
 .publications {
   margin-top: 2rem;
 }
@@ -584,12 +636,16 @@ footer.sticky-bottom {
   font-size: 1.5rem;
 }
 .publications h2.bibliography {
+  scroll-margin-top: 5rem;
   color: var(--global-divider-color);
   border-top: 1px solid var(--global-divider-color);
   padding-top: 1rem;
   margin-top: 2rem;
   margin-bottom: -2rem;
   text-align: right;
+}
+.publications [hidden] {
+  display: none !important;
 }
 .publications ol.bibliography {
   list-style: none;
@@ -967,6 +1023,94 @@ nav[data-toggle=toc] .nav-link.active:hover {
   padding-top: 0.5rem;
 }
 
+/* Compact link groups on the about page */
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.25rem 0 1rem;
+}
+.about-links .btn {
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.25;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+.about-links .btn:hover, .about-links .btn:focus {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.about-links .btn:focus-visible {
+  box-shadow: 0 0 0 0.2rem var(--global-divider-color);
+  outline: none;
+}
+
+/* Expandable research summaries on the about page */
+.research-interests {
+  margin: 0.15rem 0 1.25rem;
+}
+.research-interests details {
+  padding: 0.1rem 0;
+}
+.research-interests details + details {
+  margin-top: 0.2rem;
+}
+.research-interests details summary {
+  align-items: center;
+  color: var(--global-text-color);
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.5rem 0;
+}
+.research-interests details summary::-webkit-details-marker {
+  display: none;
+}
+.research-interests details summary::after {
+  color: var(--global-text-color-light);
+  content: "+";
+  flex: 0 0 auto;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-left: 1rem;
+  transition: color 150ms ease, transform 150ms ease;
+}
+.research-interests details summary:hover, .research-interests details summary:focus {
+  color: var(--global-theme-color);
+}
+.research-interests details summary:hover::after, .research-interests details summary:focus::after {
+  color: var(--global-theme-color);
+}
+.research-interests details summary:focus-visible {
+  border-radius: 0.2rem;
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 0.25rem;
+}
+.research-interests details[open] summary {
+  color: var(--global-theme-color);
+  margin-bottom: 0.35rem;
+}
+.research-interests details[open] summary::after {
+  color: var(--global-theme-color);
+  content: "−";
+}
+.research-interests details p {
+  max-width: 72ch;
+}
+.research-interests details p:last-child {
+  margin-bottom: 0;
+}
+
 /*******************************************************************************
  * Style overrides for distill blog posts.
  ******************************************************************************/
@@ -1110,6 +1254,160 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 /*****************************
  * CV shared styles
  *****************************/
+.cv-page {
+  --cv-border: rgba(127, 127, 127, 0.22);
+}
+.cv-page .cv-sticky-header {
+  position: sticky;
+  z-index: 10;
+  top: 56px;
+  margin: 0 0 1.5rem;
+  padding: 0.8rem 0 0.7rem;
+  background: var(--global-bg-color);
+  border-bottom: 1px solid var(--cv-border);
+}
+.cv-page .cv-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 0.65rem;
+}
+.cv-page .post-title {
+  margin: 0;
+  font-size: 1.65rem;
+  line-height: 1.2;
+}
+.cv-page .cv-download {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 0.85rem;
+  color: var(--global-bg-color);
+  background: var(--global-theme-color);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.cv-page .cv-download:hover {
+  color: var(--global-bg-color);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.14);
+}
+.cv-page .cv-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+}
+.cv-page .cv-nav a {
+  padding: 0.4rem 0.75rem;
+  color: var(--global-text-color);
+  border: 1px solid var(--cv-border);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  text-decoration: none;
+}
+.cv-page .cv-nav a:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+.cv-page a.anchor {
+  top: -145px;
+}
+.cv-page .cv-section.card {
+  margin-bottom: 1.25rem;
+  padding: 1.5rem !important;
+  background: transparent;
+  border: 1px solid var(--cv-border);
+  border-radius: 0.85rem;
+  box-shadow: none;
+}
+.cv-page .card-title {
+  margin: 0 0 1rem;
+  padding-bottom: 0.7rem;
+  color: var(--global-text-color);
+  border-bottom: 1px solid var(--cv-border);
+  font-size: 1.18rem;
+}
+.cv-page .list-group-item {
+  padding: 1.15rem 0;
+  color: var(--global-text-color);
+  background: transparent;
+  border-color: var(--cv-border);
+}
+.cv-page .list-group-item:first-child {
+  padding-top: 0.25rem;
+}
+.cv-page .list-group-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.cv-page .badge {
+  padding: 0.42rem 0.55rem;
+  color: var(--global-theme-color) !important;
+  background: rgba(0, 118, 223, 0.1) !important;
+  border-radius: 0.35rem;
+  line-height: 1.35;
+  white-space: normal;
+}
+.cv-page ul.items {
+  margin: 0.55rem 0 0;
+  padding-left: 2.7rem;
+}
+.cv-page table.table-cv {
+  margin-bottom: 0;
+}
+@media (max-width: 575px) {
+  .cv-page .cv-sticky-header {
+    top: 56px;
+    padding-top: 0.6rem;
+  }
+  .cv-page .cv-hero {
+    margin-bottom: 0.5rem;
+  }
+  .cv-page .post-title {
+    font-size: 1.35rem;
+  }
+  .cv-page .cv-download span {
+    display: none;
+  }
+  .cv-page .cv-download {
+    padding: 0.5rem 0.65rem;
+  }
+  .cv-page .cv-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.15rem;
+    scrollbar-width: none;
+  }
+  .cv-page .cv-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .cv-page .cv-nav a {
+    flex: 0 0 auto;
+  }
+  .cv-page .cv-section.card {
+    padding: 1.15rem !important;
+  }
+  .cv-page .list-group-item .row > div:first-child {
+    text-align: left !important;
+  }
+  .cv-page .list-group-item .row > div:last-child {
+    margin-top: 0.75rem !important;
+  }
+  .cv-page .list-group-item .ml-1 {
+    margin-left: 0 !important;
+  }
+  .cv-page ul.items {
+    padding-left: 1.2rem;
+  }
+}
+
 div.container-link-button {
   margin-right: 0.5rem;
 }
